@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/nathanziarek/stanchion/issues"
   },
-  "homepage": "https://github.com/nathanziarek/stanchion#readme"
+  "homepage": "https://github.com/nathanziarek/stanchion#readme",
+  "dependencies": {
+    "request": "^2.81.0"
+  }
 }
