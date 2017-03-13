@@ -1,0 +1,19 @@
+{
+  "name": "stanchion",
+  "version": "1.0.0",
+  "description": "A bracket calculation tool",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nathanziarek/stanchion.git"
+  },
+  "author": "Nathan Ziarek",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nathanziarek/stanchion/issues"
+  },
+  "homepage": "https://github.com/nathanziarek/stanchion#readme"
+}
