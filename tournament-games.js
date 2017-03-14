@@ -15,8 +15,7 @@ module.exports = function (cb) {
 			previewLinks.map(function (data) {
 				gameIdList.push(data.match(/\d+/)[0]);
 			});
-			gameIdList = unique(gameIdList);
-			cb && cb(gameIdList);
+			cb && cb(unique(gameIdList));
 		}
 	});
 
