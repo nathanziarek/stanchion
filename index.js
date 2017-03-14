@@ -1,7 +1,7 @@
 var gameDetails = require('./game-details-json'),
 	 teamSchedule = require('./team-schedule'),
 	 tourneyGames = require('./tournament-games'),
-	 fs = require('fs');
+	 fs = require('fs-extra');
 
 
 /* Get the tourney games to extract the teams */
@@ -23,6 +23,7 @@ function extractTeamSlug(json){
 function saveScheduleData(gamesArray){
 	gamesArray.forEach(function(data){
 		gameDetails(data, function(json){
+
 			console.log(`${json.data.teams[0].title} vs ${json.data.teams[1].title}`);
 			fs.writeFile(`./game-data/${json.data.id}.json`, JSON.stringify(json));
 		});
