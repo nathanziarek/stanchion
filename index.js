@@ -23,6 +23,7 @@ function extractTeamSlug(json){
 function saveScheduleData(gamesArray){
 	gamesArray.forEach(function(data){
 		gameDetails(data, function(json){
+			console.log(`${json.data.teams[0].title} vs ${json.data.teams[1].title}`);
 			fs.writeFile(`./game-data/${json.data.id}.json`, JSON.stringify(json));
 		});
 	});
